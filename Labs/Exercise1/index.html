@@ -4,47 +4,142 @@
 		<meta charset="UTF-8">
 		<title>SkillRary&apos;s Test Website</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+
 	</head>
 
 	<body>
 		<header>
 			<div class="row">
 				<div class="logo">
-					<img src="assets/logo-new.png" alt="oe_logo">
+					<div style="display: flex;">
+						<img src="assets/automate.png" alt="oe_logo" class="logoImage">
+						<span class="automateOpsText">Automate</span><div class="ml15"><span style="color: #c3202a" class="word">OpsNow</span></div>
+					</div>
 				</div>
+
 				<ul class="main-nav">
 					<li class="active"><a href="">HOME</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">BLOG</a></li>
-					<li><a href="">CONTACT</a></li>
-					<li><a href="">FAQ</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#service">SERVICES</a></li>
+					<li><a href="#blog">BLOG</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+					<!-- <li><a href="">FAQ</a></li> -->
 				</ul>
 			</div>
 			<div class="hero">
 				<h1>Ready for Action?</h1>
 				<div class="button">
-					<a href="" class="btn btn-one">Watch Video</a>
-					<a href="" class="btn btn-two">Explore More</a>
+					<a href="https://www.youtube.com/watch?v=JkxpVLmziIA" target="_blank" class="btn btn-one">Watch Video</a>
+					<a href="http://automateops.skillrary.com/" target="_blank" class="btn btn-two">Explore More</a>
 				</div>
 			</div>
 		</header>
-		<section class="service grid-container">
+		<section class="service grid-container" id="about">
+			<div class="container">
+				<div id="about-header">
+					<h1>About Us</h1>
+				</div>
+				<p class="aboutContent">Our DevOps methodology refers to anything that Influences the interaction between development and operations. Development needs as many changes as possible to grow and to meet the needs of the changing time while for Operations change is the enemy. Operations require stability and thus strongly resist change, this is a requirement for Development.</p>
+				<div class="row aboutContent" style="display: flex;">
+					<div class="col-md-4" style="width: 33.33%;padding: 10px;">
+						<img src="assets/infinite-symbol.png" class="imageAbout"/><br/>
+						<p class="aboutHeading">DevOps</p>
+						<p>DevOps enables formerly siloed roles—development, IT operations, quality engineering and security—to coordinate and collaborate to produce better, more reliable products</p>
+					</div>
+					<div class="col-md-4" style="width: 33.33%;padding: 10px;">
+						<img src="assets/optimization.png" class="imageAbout"/><br/>
+						<p class="aboutHeading">SRE</p>
+						<p>DevOps enables formerly siloed roles—development, IT operations, quality engineering and security—to coordinate and collaborate to produce better, more reliable products</p>
+					</div>
+					<div class="col-md-4" style="width: 33.33%;padding: 10px;">
+						<img src="assets/cloud.png" class="imageAbout"/><br/>
+						<p class="aboutHeading">Cloud</p>
+						<p>Cloud-based DevOps lessens the need to account for resources leveraged. Clouds leverage usage-based accounting, which tracks the use of resources by application, developer, user, data, etc. Traditional systems typically don't provide this service. </p>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section class="about grid-container">
+		<section class="about grid-container" id="service" style="padding: 20px;">
+			<div class="container">
+				<div id="about-header">
+					<h1>Services</h1>
+				</div><br/>
+				<div class="center">
+					<div class="columns">
+						<div class="product column">
+							<div>
+								<h3 class="headerLg">DevOps Consulting</h3><br/><br/>
+								<div class="description">
+									Agile is not just a methodology; it is a mindset. To kick-start your transition to DevOps, our software architects will do a comprehensive analysis of your requirements and help you visualize the outcomes. </div>
+							</div>
+						</div>
+						<div class="product column">
+							<div>
+								<h3 class="headerLg">Infrastructure as a Code</h3><br/><br/>
+								<div class="description">To successfully implement a good DevOps strategy for your organisation, using infrastructure as a code becomes crucial.With faster deployments, higher ROIs, automated testing, and iterative data management, our strategic approach uses best practices such as continuous integration to create a masterful, programmable software.</div>
+							</div>
+						</div>
+						<div class="product column">
+							<div>
+								<h3 class="headerLg">Continuous Integration and Delivery</h3><br/><br/>
+								<div class="description">Shared repositories allow the DevOps team to perform continuous integration and adhere to rapid delivery cycles. This is the most crucial phase in the development pipeline. API-driven automation tools perform builds for further testing.</div>
+							</div>
+						</div>
+					</div>
+					<div class="columns">
+						<div class="product column">
+							<div>
+								<h3 class="headerLg">Cloud Infrastructure</h3><br/><br/>
+								<div class="description">Whether your existing system needs migration to the Cloud, our team has got you covered. Our extensive experience with AWS, GCP, and Azure helps scale your native infrastructure to make it cloud-compatible, improve performance and reliability drastically. </div>
+							</div>
+						</div>
+						<div class="product column">
+							<div>
+								<h3 class="headerLg">Containerization</h3><br/><br/>
+								<div class="description">Containers are abstractions of software like virtual machines are of hardware. Containerized environments are lightweight, with each container including all the dependencies required for the software to operate. </div>
+							</div>
+						</div>
+						<div class="product column">
+							<div>
+								<h3 class="headerLg">Monitoring and Alerting</h3><br/><br/>
+								<div class="description">Once the Cloud infrastructure has been set up, we provide 24/7 continuous monitoring services to keep a watch on potential errors, and to report them in a timely manner. </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+
+			</div>
 		</section>
-		<section class="blog grid-container">
+		<section class="blog grid-container" id="blog">
+			<div class="container">
+				<div id="about-header">
+					<h1>Blog</h1>
+				</div><br/>
+				<div style="background-color: white;display: flex;padding: 20px;">
+					<img src="https://skillrary.com/uploads/blog/small_24591619528388.png" />
+					<div>
+						<h4 class="blogHeader">An Overview of Learning Management Systems</h4><br/>
+						<ul class="blog-list"> <li> <i class="fa fa-folder icon-muted"></i> <span> <a href="#">Enterprise </a> </span> </li> <li> <i class="fa fa-user icon-muted"></i> <span>By &nbsp;&nbsp; <a href="#"> Amruta Bhaskar </a> </span> </li> <li><i class="fa fa-calendar"></i> <span> Apr 27, 2021 </span> </li> <li><i class="fa fa-comments"></i> <span> <a href="#" class="ignorelink"> 0 Comments</a> </span> </li> <li><i class="fa fa-eye"></i> <span> <a href="#"> 136 Views</a> </span> </li> </ul><br/>
+						<p class="blogtext">Organizational leaders have realized that in order to sustain a more knowledgeable and productive workforce, employee learning must be an ongoing focus. Choosing the right Learning Management System (LMS) can help achieve the goal. There are certain benefits and features that an LMS can offer that will make corporate learning more effective. </p>
+					</div>
+				</div>
+				
+			</div>
 		</section>
-		<section class="contact grid-container">
+		<section class="contact grid-container" id="contact">
 			<div class="contact-form grid-item">
 				<div class="contact-section-header">
-					<h2>Get in touch with us!</h2>
+					<h2>Contact us!</h2>
 				</div>
 				<form class="form">
 					<input type="text" name="fullname" placeholder="Fullname">
 					<input type="email" name="email" placeholder="Email Address">
 					<input type="number" name="phonenumber" placeholder="Phone Number">
-					<textarea class="subject" name="subject" placeholder="Your subject here..."></textarea>
+					<textarea class="subject" name="subject" placeholder="Your subject here..." style="padding: 10px 5px;"></textarea>
 					<input class="button" type="submit" value="Submit">
 				</form>
 			</div>
@@ -53,6 +148,24 @@
 		</section>
 		<section class="faq grid-container">
 		</section>
+
+		<script>
+			anime.timeline({loop: true})
+			.add({
+				targets: '.ml15 .word',
+				scale: [14,1],
+				opacity: [0,1],
+				easing: "easeOutCirc",
+				duration: 800,
+				delay: (el, i) => 800 * i
+			}).add({
+				targets: '.ml15',
+				opacity: 0,
+				duration: 1000,
+				easing: "easeOutExpo",
+				delay: 1000
+			});
+		</script>
 	</body>
 
 </html>

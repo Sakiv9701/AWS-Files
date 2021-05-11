@@ -4,7 +4,8 @@
 }
 
 body {
-	font-family: monospace;
+	font-family: "Roboto", sans-serif;
+
 }
 
 header {
@@ -64,9 +65,11 @@ h1 {
 	text-transform: uppercase;
 	font-size: 70px;
 	text-align: center;
+	/* margin-top: 300px; */
+}
+.hero h1{
 	margin-top: 300px;
 }
-
 .button {
 	text-align: center;
 	margin-top: 50px;
@@ -94,7 +97,7 @@ h1 {
 
 .grid-container {
 	display: grid;
-  	grid-template-columns: auto auto;
+  	/* grid-template-columns: auto auto; */
   	padding: 10px;
 }
 
@@ -111,17 +114,48 @@ h1 {
 
 .about {
 	background-image: url(assets/banner-bg.jpg);
-	height: 100vh;
+	/* height: 100vh; */
+	height: 700px;
 	background-size: cover;
 	background-position: center;
 }
-
+.service::before{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+    cursor: pointer !important;
+}
 .blog {
 	background-image: url(assets/banner-texture@2x.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-
+	background: #3f3c3c;
+}
+.blogHeader{
+	font-size: 19px;
+	font-family: "Roboto", sans-serif;
+	padding-left: 30px;
+}
+.blogtext{
+	font-size: 15px;
+	font-family: "Roboto", sans-serif;
+	padding-left: 30px;
+	line-height: 25px;
+}
+.blog-list{
+	list-style: none;
+    display: flex;
+    padding-left: 30px;
+}
+.blog-list li{
+	padding-left: 10px;
+}
+.blog-list li a{
+	color: black;
 }
 
 .contact {
@@ -155,11 +189,12 @@ h1 {
 	font-size: 20px;
 	text-decoration: none;
 	outline: none;
-	width: 70%;
+	width: 49%;
 	height: 60px;
 	padding-left: 10px;
 	border-radius: 6px;
 	border: none;
+	font-family: "Roboto", sans-serif;
 	margin: 5px 0;
 }
 
@@ -167,7 +202,7 @@ h1 {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    width: 71%;
+    width: 50%;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -187,7 +222,126 @@ input[type=number]::-webkit-inner-spin-button,
  	height: 150px;
  	color: black;
  }
+ .logoImage{
+	width: 140px;
+    margin-top: -10px;
+ }
+ .automateOpsText{
+	color: white;
+    font-family: Roboto, sans-serif;
+    /* margin-top: 12px; */
+    font-size: 26px;
+    letter-spacing: 2px;
+ }
+ .ml15 {
+  font-weight: 600;
+  font-size: 26px;
+  font-family: Roboto, sans-serif;
+}
 
+#about-header {
+	font-size: 40px;
+	/*text-align: center;
+	  margin:100px 10px 10px 10px;*/
+	display: table;/* shrinks on content */
+	margin: 10px auto;/* margin:auto instead text-align for this block  */
+	font-family: Poiret One;
+	color: lightyellow;
+	border-bottom: 2px solid #c3202a;
+  }
+  .aboutContent{
+	  font-size: 18px;
+	  color: white;
+	  font-family: Roboto, sans-serif;
+		margin: 40px;
+		line-height: 30px;
+  }
+  .imageAbout{
+	width: 70px;
+    /* height: 100px; */
+	background-color: white;
+    padding: 10px;
+    position: relative;
+    border-radius: 12px;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  .columns{
+	  display: flex;
+	  flex-wrap: wrap;
+  }
+  .column {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    max-width: 100%;
+}
+.product.column:last-child {
+    border-left: 2px solid #ccc;
+}
+.product.column:first-child {
+    border-right: 2px solid #ccc;
+}
+.columns:first-child .column, .columns:nth-child(2) .column {
+    border-bottom: 2px solid #ccc;
+}
+.product.column {
+    -webkit-border-image: -webkit-radial-gradient(#ccc,transparent) .5;
+    border-image: radial-gradient(#ccc,transparent) .5;
+}
+.product {
+    position: relative;
+    height: 250px;
+}
+.product > div {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+	transition: transform 175ms ease,opacity 175ms ease,-webkit-transform 175ms ease;
+	box-shadow: 5px 7px 10px 0 rgb(35 43 48 / 6%);
+}
+.product:hover{
+    opacity: 1;
+    background-color: #c7b4b4;
+    -webkit-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+	border-radius: 20px;
+}
+.product:hover {
+    z-index: 2;
+}
+.description{
+	color: #7b8199;
+    width: 300px;
+    margin: auto;
+	letter-spacing: 1px;
+}
+.headerLg{
+	font-size: 18px;
+    line-height: 28px;
+	color: white;
+	font-family: "Roboto", sans-serif;
+}
+.description{
+	font-size: 15px;
+	color: whitesmoke;
+	font-family: "Roboto", sans-serif;
+	line-height: 20px;
+}
+.center{
+	text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0px 100px;
+}
 @media
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
